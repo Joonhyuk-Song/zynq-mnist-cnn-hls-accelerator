@@ -1,5 +1,5 @@
 ================================================================================
-QUANTIZED CNN ACCELERATOR FOR MNIST DIGIT CLASSIFICATION (ZYNQ-7000)
+CNN ACCELERATOR (ZYNQ-7000)
 ================================================================================
 
 PROJECT OVERVIEW
