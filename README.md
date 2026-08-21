@@ -1,7 +1,3 @@
-================================================================================
-CNN ACCELERATOR (ZYNQ-7000)
-================================================================================
-
 PROJECT OVERVIEW
 ----------------
 An end-to-end hardware-software co-design framework implementing a quantized
