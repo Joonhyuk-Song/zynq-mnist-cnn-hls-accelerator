@@ -41,20 +41,6 @@ POST-IMPLEMENTATION PERFORMANCE
 - Worst Negative Slack (WNS): +0.722 ns (Met 100 MHz target constraint)[cite: 1]
 - Critical Path: Deeply nested 'if' statements in the final layer's argmax module[cite: 1].
 
-Resource Utilization Metrics:
------------------------------------------------------------------
-Resource         | Guideline | Actual Utilization | Status
------------------------------------------------------------------
-LUT              | 70%       | 59.68%             | OK[cite: 1]
-FD               | 50%       | 20.57%             | OK[cite: 1]
-LUTRAM+SRL       | 25%       | 7.58%              | OK[cite: 1]
-MUXF7            | 15%       | 13.76%             | OK[cite: 1]
-LUT Combining    | 20%       | 22.69%             | REVIEW[cite: 1]
-DSP              | 80%       | 90.00%             | REVIEW[cite: 1]
-BRAM/FIFO        | 80%       | 10.83%             | OK[cite: 1]
------------------------------------------------------------------
-
-
 MEMORY MAP REGISTERS (s_axi_ctrl)
 ---------------------------------
 - 0x00 (CTRL)           : R/W | Bit 0: ap_start, Bit 1: ap_done, 
