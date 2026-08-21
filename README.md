@@ -20,25 +20,6 @@ High-Level Synthesis (HLS) and integrated via AXI bus protocols[cite: 1].
   execution, and status polling[cite: 1].
 
 
-SYSTEM ARCHITECTURE & DATAFLOW
-------------------------------
-
-+-------------------------------------------------------------------+
-|                        Zynq-7000 Platform                         |
-|                                                                   |
-|   +-------+   AXI Master   +-------+  AXI Stream   +-----------+  |
-|   |  DDR  |===============>|  DMA  |=============> |  IP CORE  |  |
-|   +-------+                +-------+               | (mnist_ip)|  |
-|       ||                                           +-----------+  |
-|       || AXI Master (Weights/Biases)                    ||        |
-|       +=================================================+         |
-|                                                         || BRAM   |
-|                                                    +----------+   |
-|                                                    | Scratch  |   |
-|                                                    |  BRAM    |   |
-|                                                    +----------+   |
-+-------------------------------------------------------------------+
-
 FINITE STATE MACHINE (FSM) EXECUTION FLOW:
 1. IDLE       : Initial reset state[cite: 1].
 2. LOAD_W     : Fetches 8-bit weights and 16-bit biases from off-chip DDR 
@@ -89,7 +70,7 @@ MEMORY MAP REGISTERS (s_axi_ctrl)
 
 REPOSITORY STRUCTURE
 --------------------
-├── docs/                   # Put HLS_Report.pdf and schematics here
+├── docs/                   
 ├── hls/                    # Vitis HLS C/C++ source code and top headers
 ├── hardware/               # Vivado block design, XSA, and bitstream files
 ├── weights/                # Quantized weights and biases files
