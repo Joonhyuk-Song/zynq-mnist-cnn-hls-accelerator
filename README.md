@@ -70,12 +70,12 @@ MEMORY MAP REGISTERS (s_axi_ctrl)
 
 REPOSITORY STRUCTURE
 --------------------
-├── docs/                   
-├── hls/                    # Vitis HLS C/C++ source code and top headers
-├── hardware/               # Vivado block design, XSA, and bitstream files
-├── weights/                # Quantized weights and biases files
-├── host/                   # Python UART scripts and test BMP images
-└── README.txt              # Project text documentation
+docs/                   
+hls/                    # Vitis HLS C/C++ source code and top headers
+hardware/               #  XSA
+weights/                # Quantized weights and biases files
+host/                   # Python UART scripts and test BMP images
+README.txt              # Project text documentation
 
 
 HOW TO RUN
