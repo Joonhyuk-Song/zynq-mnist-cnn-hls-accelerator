@@ -70,7 +70,8 @@ MEMORY MAP REGISTERS (s_axi_ctrl)
 
 REPOSITORY STRUCTURE
 --------------------
-docs/                   
+docs/   
+driver/                 # driver 
 hls/                    # Vitis HLS C/C++ source code and top headers
 hardware/               #  XSA
 weights/                # Quantized weights and biases files
