@@ -77,14 +77,18 @@ weights/                # Quantized weights and biases files
 host/                   # Python UART scripts and test BMP images
 README.txt              # Project text documentation
 
+## How to Run
 
-HOW TO RUN
-----------
-1. Hardware Assembly:
-   Open Vivado, generate the block design using block_design.xsa[cite: 1], and 
-   program the Zynq Zybo board with the generated bitstream.
+### Step 1: Set Up Vitis Application
+1. Open **AMD Vitis IDE**.
+2. Go to **File → New → Platform Project**, select your `block_design.xsa` file[cite: 1], and click **Build Project**.
+3. Go to **File → New → Application Project**, select the platform you just built, choose **ps7_cortexa9_0**[cite: 1], and select **Empty Application (C/C++)**.
+4. Drag your custom driver files and main C code into the application's `src/` folder[cite: 1].
+5. Right-click your application project and select **Build Project**.
 
-2. Host Script Execution:
-   Connect the board via USB/UART and execute the Python driver script:
-   
-   python host/uart_test_runner.py --image host/sample_5.bmp --port /dev/ttyUSB1
+### Step 2: Program & Run
+1. Power on your Zynq Zybo board (connected via USB).
+2. Right-click your application project in Vitis and select **Run As → Launch Hardware (Single Application Debug)**.
+
+### Step 3: Stream Image via Python Host
+Run the Python script from your PC terminal to stream your image and view the digit prediction:
